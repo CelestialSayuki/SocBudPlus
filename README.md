@@ -105,7 +105,7 @@ Please **DO NOT** share or reverse-engineer this software in any public setting.
 
 **This software is for internal preview only. Please join the QQ Group to receive the download link and the latest version!**
 
-> **Official QQ Group: [Click here to join the infodrop.cn QQ Group] (https://infodrop.cn/?open=auth) **
+**Official QQ Group: [Click here to join the infodrop.cn QQ Group](https://infodrop.cn/?open=auth)**
 
 ---
 
