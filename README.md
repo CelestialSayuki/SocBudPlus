@@ -41,10 +41,51 @@ We provide **5 distinct distributions** across macOS and iOS platforms:
 
 | Component | Requirement |
 | :--- | :--- |
-| **Architecture** | Apple Silicon (M1/M2/M3/M4/A-Series) |
+| **Architecture** | Apple Silicon |
 | **Socpowerbud XTs (GUI)** | **macOS 13.0+** (Ventura) or **iOS 16.0+** |
 | **Socpowerbud XT (CLI)** | **macOS 11.0+** (Big Sur) or **iOS 11.0+** |
 
+## ✅ Chip Support Status
+
+While Socpowerbud XT can detect the model identity of almost all Apple Silicon devices, full power telemetry requires specific hardware sensor mapping.
+
+### Apple M-Series
+
+| Chip Model | Status | Capability |
+| :--- | :---: | :--- |
+| **M1** | ⚪ **Pending** | Power sensors pending. |
+| **M1 Pro** | ⚪ **Pending** | Power sensors pending. |
+| **M1 Max** | 🟢 **Supported** | Full Telemetry. |
+| **M1 Ultra** | ⚪ **Pending** | Power sensors pending. |
+| **M2** | 🟢 **Supported** | Full Telemetry. |
+| **M2 Pro** | ⚪ **Pending** | Power sensors pending. |
+| **M2 Max** | ⚪ **Pending** | Power sensors pending. |
+| **M2 Ultra** | ⚪ **Pending** | Power sensors pending. |
+| **M3**| ⚪ **Pending** | Power sensors pending. |
+| **M3 Pro**| ⚪ **Pending** | Power sensors pending. |
+| **M3 Max**| 🟡 **Partial** | T6034 Power sensors pending. |
+| **M3 Ultra**| ⚪ **Pending** | Power sensors pending. |
+| **M4** | ⚪ **Pending** | Power sensors pending. |
+| **M4 Pro** | 🟢 **Supported** | Full Telemetry. |
+| **M4 Max** | ⚪ **Pending** | Power sensors pending. |
+| **M5** | ⚪ **Pending** | Power sensors pending. |
+
+### Apple A-Series
+
+| Chip Model | Status | Capability |
+| :--- | :---: | :--- |
+| **A19 / Pro** | ⚪ **Pending** | Power sensors pending. |
+| **A18 / Pro** | ⚪ **Pending** | Power sensors pending. |
+| **A17 Pro** | ⚪ **Pending** | Power sensors pending. |
+| **A16 Bionic** | ⚪ **Pending** | Power sensors pending. |
+| **A15 Bionic** | ⚪ **Pending** | Power sensors pending. |
+| **A14 Bionic** | ⚪ **Pending** | Power sensors pending. |
+| **A13 Bionic** | ⚪ **Pending** | Power sensors pending. |
+| **A12X / A12Z Bionic** | ⚪ **Pending** | Power sensors pending. |
+| **A12 Bionic** | ⚪ **Pending** | Power sensors pending. |
+| **A11 and older** | ⚪ **Pending** | Power sensors pending. |
+
+> **Note**: Devices marked as "Detected" will launch and identify the chip model correctly, but the dashboard will show empty graphs and 0 values.
 ## 🖥️ Socpowerbud XT (CLI) Usage
 
 The CLI version is a standalone binary that provides detailed telemetry identical to low-level engineering tools. 
