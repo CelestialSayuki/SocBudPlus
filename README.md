@@ -54,20 +54,20 @@ While Socpowerbud XT can detect the model identity of almost all Apple Silicon d
 | Chip Model | Status | Capability |
 | :--- | :---: | :--- |
 | **M1** | ⚪ **Pending** | Power sensors pending. |
-| **M1 Pro** | ⚪ **Pending** | Power sensors pending. |
+| **M1 Pro** | 🟢 **Supported** | Full Telemetry. |
 | **M1 Max** | 🟢 **Supported** | Full Telemetry. |
 | **M1 Ultra** | ⚪ **Pending** | Power sensors pending. |
 | **M2** | 🟢 **Supported** | Full Telemetry. |
 | **M2 Pro** | ⚪ **Pending** | Power sensors pending. |
-| **M2 Max** | ⚪ **Pending** | Power sensors pending. |
+| **M2 Max** | 🟢 **Supported** | Full Telemetry. |
 | **M2 Ultra** | ⚪ **Pending** | Power sensors pending. |
 | **M3**| ⚪ **Pending** | Power sensors pending. |
-| **M3 Pro**| ⚪ **Pending** | Power sensors pending. |
+| **M3 Pro**| 🟢 **Supported** | Full Telemetry. |
 | **M3 Max**| 🟡 **Partial** | T6034 Power sensors pending. |
 | **M3 Ultra**| ⚪ **Pending** | Power sensors pending. |
 | **M4** | ⚪ **Pending** | Power sensors pending. |
 | **M4 Pro** | 🟢 **Supported** | Full Telemetry. |
-| **M4 Max** | ⚪ **Pending** | Power sensors pending. |
+| **M4 Max** | 🟢 **Supported** | Full Telemetry. |
 | **M5** | ⚪ **Pending** | Power sensors pending. |
 
 ### Apple A-Series
