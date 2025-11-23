@@ -85,7 +85,6 @@ While Socpowerbud XT can detect the model identity of almost all Apple Silicon d
 | **A12 Bionic** | ⚪ **Pending** | Power sensors pending. |
 | **A11 and older** | ⚪ **Pending** | Power sensors pending. |
 
-> **Note**: Devices marked as "Detected" will launch and identify the chip model correctly, but the dashboard will show empty graphs and 0 values.
 ## 🖥️ Socpowerbud XT (CLI) Usage
 
 The CLI version is a standalone binary that provides detailed telemetry identical to low-level engineering tools. 
