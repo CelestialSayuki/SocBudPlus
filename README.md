@@ -1,11 +1,11 @@
-# Socpowerbud XT
+# Socbud
 
-**Socpowerbud XT** is an advanced power and performance monitoring suite designed specifically for Apple Silicon devices.
+**Socbud** is an advanced power and performance monitoring suite designed specifically for Apple Silicon devices.
 
 The project is divided into two distinct product lines to cater to different needs:
 
-* **Socpowerbud XTs**: A modern, beautiful GUI application built with SwiftUI and \"Liquid Glass\" design language.
-* **Socpowerbud XT**: A lightweight, pure CLI tool for terminal enthusiasts and developers, providing granular data output.
+* **Socbud+**: A modern, beautiful GUI application built with SwiftUI and \"Liquid Glass\" design language.
+* **Socbud**: A lightweight, pure CLI tool for terminal enthusiasts and developers, providing granular data output.
 
 ## 🚀 Download and Installation
 
@@ -25,7 +25,7 @@ The project is divided into two distinct product lines to cater to different nee
 
 We provide **5 distinct distributions** across macOS and iOS platforms:
 
-| Feature | macOS: **XTs** (GUI) | macOS: **XT** (CLI) | iOS: **XTs** | iOS: **XTs-JB** | iOS: **XT** (CLI) |
+| Feature | macOS: **Socbud+** (GUI) | macOS: **Socbud** (CLI) | iOS: **Socbud+** | iOS: **Socbud+-JB** | iOS: **Socbud** (CLI) |
 | :--- | :---: | :---: | :---: | :---: | :---: |
 | **Type** | Desktop App | Binary Tool | Sideload App | Jailbreak App | Binary Tool |
 | **Interface** | Liquid Glass UI | Text / Stdout | Liquid Glass UI | Liquid Glass UI | Text / Stdout |
@@ -35,19 +35,19 @@ We provide **5 distinct distributions** across macOS and iOS platforms:
 | **Legacy OS** | ❌ | ✅ | ❌ | ❌ | ✅ |
 | **Root/Sudo** | Not Required | Not Required | Not Required | Not Required | Not Required |
 
-> **Note**: **iOS XTs** is designed for TrollStore or standard signing. **iOS XTs-JB** is optimized for Jailbroken environments (Rootful/Rootless) with extended entitlements.
+> **Note**: **iOS Socbud+** is designed for TrollStore or standard signing. **Socbud+-JB** is optimized for Jailbroken environments (Rootful/Rootless) with extended entitlements.
 
 ## 🛠️ System Requirements
 
 | Component | Requirement |
 | :--- | :--- |
 | **Architecture** | Apple Silicon |
-| **Socpowerbud XTs (GUI)** | **macOS 13.0+** (Ventura) or **iOS 16.0+** |
-| **Socpowerbud XT (CLI)** | **macOS 11.0+** (Big Sur) or **iOS 11.0+** |
+| **Socbud+ (GUI)** | **macOS 13.0+** (Ventura) or **iOS 16.0+** |
+| **Socbud (CLI)** | **macOS 11.0+** (Big Sur) or **iOS 11.0+** |
 
 ## ✅ Chip Support Status
 
-While Socpowerbud XT can detect the model identity of almost all Apple Silicon devices, full power telemetry requires specific hardware sensor mapping.
+While Socbud can detect the model identity of almost all Apple Silicon devices, full power telemetry requires specific hardware sensor mapping.
 
 ### Apple M-Series
 
@@ -85,7 +85,7 @@ While Socpowerbud XT can detect the model identity of almost all Apple Silicon d
 | **A12 Bionic** | ⚪ **Pending** | Power sensors dump pending. |
 | **A11 and older** | ⚪ **Pending** | Power sensors dump pending. |
 
-## 🖥️ Socpowerbud XT (CLI) Usage
+## 🖥️ Socbud (CLI) Usage
 
 The CLI version is a standalone binary that provides detailed telemetry identical to low-level engineering tools. 
 
@@ -95,10 +95,10 @@ The CLI version is a standalone binary that provides detailed telemetry identica
 
 ```bash
 # Run with default settings (1.0s refresh)
-./socpowerbud-xt
+./socbud
 
 # Run with a specific refresh interval (e.g., 0.5 seconds)
-./socpowerbud-xt -i 0.5
+./socbud -i 0.5
 ```
 
 ### Output Explanation
@@ -114,7 +114,7 @@ The CLI outputs a structured view of the SoC's power state:
     * Residency (Active vs Idle %)
     * **DVFS Distribution**: A histogram of time spent at each frequency state.
                     
-## 📱 Socpowerbud XTs (GUI) Usage
+## 📱 Socbud+ (GUI) Usage
 
 ### Local Monitoring
 Simply launch the app. The dashboard will visualize real-time metrics using the adaptive Liquid Glass interface.
@@ -123,8 +123,8 @@ Simply launch the app. The dashboard will visualize real-time metrics using the 
 Turn your iPhone/iPad into a dedicated dashboard for your Mac:
 
 1.  Ensure both devices are on the same LAN/Wi-Fi.
-2.  **Host**: Run **XTs** (macOS) or **XT** (CLI) on the device you want to monitor.
-3.  **Client**: Run **XTs** on your viewing device (iOS/macOS).
+2.  **Host**: Run GUI or CLI Version on the device you want to monitor.
+3.  **Client**: Run **Socbud+** on your viewing device (iOS/macOS).
 4.  Tap the device menu in the header and select the Host.
 
 ## ⚠️ Disclaimer
