@@ -83,7 +83,8 @@ While Socbud can detect the model identity of almost all Apple Silicon devices, 
 | **A13 Bionic** | ⚪ **Pending** | Power sensors dump pending. |
 | **A12X / A12Z Bionic** | ⚪ **Pending** | Power sensors dump pending. |
 | **A12 Bionic** | ⚪ **Pending** | Power sensors dump pending. |
-| **A11 and older** | ⚪ **Pending** | Power sensors dump pending. |
+| **A11 Bionic** | 🟢 **Supported** | Full Telemetry. |
+| **A10 and older** | ⚪ **Pending** | Power sensors dump pending. |
 
 ## 🖥️ Socbud (CLI) Usage
 
