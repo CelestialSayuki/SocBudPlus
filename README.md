@@ -45,7 +45,7 @@ We provide **5 distinct distributions** across macOS and iOS platforms:
 | :--- | :--- |
 | **Architecture** | Apple Silicon |
 | **Socbud+ (GUI)** | **macOS 13.0+** (Ventura) or **iOS 16.0+** |
-| **Socbud (CLI)** | **macOS 11.0+** (Big Sur) or **iOS 11.0+** |
+| **Socbud (CLI)** | **macOS 11.0+** (Big Sur) or **iOS 13.0+** |
 
 ## ✅ Chip Support Status
 
@@ -84,7 +84,12 @@ While Socbud can detect the model identity of almost all Apple Silicon devices, 
 | **A12X / A12Z Bionic** | ⚪ **Pending** | Power sensors dump pending. |
 | **A12 Bionic** | ⚪ **Pending** | Power sensors dump pending. |
 | **A11 Bionic** | 🟢 **Supported** | Full Telemetry. |
-| **A10 and older** | ⚪ **Pending** | Power sensors dump pending. |
+| **A10X Fusion** | ⚪ **Pending** | Power sensors dump pending. |
+| **A10 Fusion** | ⚪ **Pending** | Power sensors dump pending. |
+| **A9X** | ⚪ **Pending** | Power sensors dump pending. |
+| **A9** | ⚪ **Pending** | Power sensors dump pending. |
+| **A8X** | ⚪ **Pending** | Power sensors dump pending. |
+| **A8** | ⚪ **Pending** | Power sensors dump pending. |
 
 ## 🖥️ Socbud (CLI) Usage
 
