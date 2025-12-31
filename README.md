@@ -2,12 +2,12 @@
 
 **Socbud** is an advanced power and performance monitoring suite designed specifically for Apple Silicon devices.
 
-It features a groundbreaking **Dual Voltage Analysis Engine**, capable of distinguishing between **Core Logic** and **SRAM** voltages—revealing the true, ultra-low power states of Apple Silicon that other tools miss.
+It is capable of distinguishing between **Core Logic** and **SRAM** voltages—revealing the true, ultra-low power states of Apple Silicon that other tools miss.
 
 The project is divided into two distinct product lines...
 
 * **Socbud+**: A modern, beautiful GUI application built with SwiftUI and \"Liquid Glass\" design language.
-* **Socbud**: A lightweight, pure CLI tool for terminal enthusiasts and developers, providing granular data output.
+* **Socbud+ TUI**: A lightweight, pure TUI tool for terminal enthusiasts and developers, providing granular data output with ASCII visualizations.
 
 ## 🚀 Download and Installation
 
@@ -25,19 +25,17 @@ The project is divided into two distinct product lines...
 
 ## 🌟 Feature Matrix & Distributions
 
-We provide **5 distinct distributions** across macOS and iOS platforms:
+We provide some distinct distributions across macOS and iOS platforms:
 
-| Feature | macOS: **Socbud+** (GUI) | macOS: **Socbud** (CLI) | iOS: **Socbud+** | iOS: **Socbud+-JB** | iOS: **Socbud** (CLI) |
+| Feature | macOS: **Socbud+** (GUI) | macOS: **Socbud+ TUI** | iOS: **Socbud+** | iOS: **Socbud+-JB** | iOS: **Socbud+ TUI** |
 | :--- | :---: | :---: | :---: | :---: | :---: |
 | **Type** | Desktop App | Binary Tool | Sideload App | Jailbreak App | Binary Tool |
-| **Interface** | Liquid Glass UI | Text / Stdout | Liquid Glass UI | Liquid Glass UI | Text / Stdout |
-| **Visual Charts** | ✅ | ❌ | ✅ | ✅ | ❌ |
+| **Interface** | Liquid Glass UI | TUI | Liquid Glass UI | Liquid Glass UI | TUI |
+| **Visual Charts** | ✅ | ✅ (ASCII) | ✅ | ✅ | ✅ (ASCII) |
 | **Raw Data Dump** | ❌ | ✅ | ❌ | ❌ | ✅ |
 | **Remote Monitor** | Host / Client | Host Only | Client Only | Client / Host | Host Only |
 | **Legacy OS** | ❌ | ✅ | ❌ | ❌ | ✅ |
-| **Root/Sudo** | Not Required | Not Required | Not Required | Not Required | Not Required |
-
-> **Note**: **iOS Socbud+** is designed for TrollStore or standard signing. **Socbud+-JB** is optimized for Jailbroken environments (Rootful/Rootless) with extended entitlements.
+> **Note**: **iOS Socbud+** is designed for standard signing, which only act as a client. **Socbud+-JB** is optimized for Jailbroken environments (Rootful/Rootless) with extended entitlements.
 
 ## 🛠️ System Requirements
 
@@ -45,7 +43,7 @@ We provide **5 distinct distributions** across macOS and iOS platforms:
 | :--- | :--- |
 | **Architecture** | Apple Silicon |
 | **Socbud+ (GUI)** | **macOS 13.0+** (Ventura) or **iOS 16.0+** |
-| **Socbud (CLI)** | **macOS 11.0+** (Big Sur) or **iOS 13.0+** |
+| **Socbud+ TUI** | **macOS 11.0+** (Big Sur) or **iOS 13.0+** |
 
 ## ✅ Chip Support Status
 
@@ -91,35 +89,40 @@ While Socbud can detect the model identity of almost all Apple Silicon devices, 
 | **A8X** | ⚪ **Pending** | Power sensors dump pending. |
 | **A8** | ⚪ **Pending** | Power sensors dump pending. |
 
-## 🖥️ Socbud (CLI) Usage
+## 🖥️ Socbud+ TUI Usage
 
-The CLI version is a standalone binary that provides detailed telemetry identical to low-level engineering tools. 
+The **Socbud+ TUI** version is a standalone binary that provides detailed telemetry identical to low-level engineering tools, wrapped in a responsive Text User Interface.
 
 **Note:** You do **not** need `sudo` to run this tool. It works with standard user privileges as long as the binary is correctly signed with the necessary entitlements.
 
 ### Basic Command
 
 ```bash
-# Run with default settings (1.0s refresh)
+# Run with default settings
 ./socbud
-
-# Run with a specific refresh interval (e.g., 0.5 seconds)
-./socbud -i 0.5
 ```
+
+### Controls & Navigation
+
+*   **ARROWS**: Select Clusters or Cores.
+*   **ENTER**: View detailed breakdown (DVFS tables & ASCII Charts).
+*   **1 / 2 / 3**: Set refresh rate to 0.5s / 1.0s / 2.0s.
+*   **7 / 8 / 9**: Set chart history to 60s / 180s / 300s.
+*   **Q**: Quit.
 
 ### Output Explanation
 
-The CLI outputs a structured view of the SoC's power state:
+The TUI outputs a structured view of the SoC's power state:
 
 * **Unmapped E**: Power rails not assigned to specific cores (System overhead).
 * **ANE**: Apple Neural Engine frequency and voltage.
 * **Clusters**: Detailed breakdown of E-Cores and P-Cores, including:
     * Frequency (MHz)
     * **Voltage (mV)**: Displays both **Logic** (Active Core) and **SRAM** (Cache) voltages separately when available.
-    * Power (mW)
+    * Power (W)
     * Residency (Active vs Idle %)
     * **DVFS Distribution**: A histogram of time spent at each frequency state.
-                    
+
 ## 📱 Socbud+ (GUI) Usage
 
 ### Local Monitoring
@@ -129,7 +132,7 @@ Simply launch the app. The dashboard will visualize real-time metrics using the 
 Turn your iPhone/iPad into a dedicated dashboard for your Mac:
 
 1.  Ensure both devices are on the same LAN/Wi-Fi.
-2.  **Host**: Run GUI or CLI Version on the device you want to monitor.
+2.  **Host**: Run GUI or TUI Version on the device you want to monitor.
 3.  **Client**: Run **Socbud+** on your viewing device (iOS/macOS).
 4.  Tap the device menu in the header and select the Host.
 
