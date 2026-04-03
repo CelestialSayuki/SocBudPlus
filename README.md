@@ -67,6 +67,8 @@ While Socbud can detect the model identity of almost all Apple Silicon devices, 
 | **M3 Ultra** | 🟡 **Unknown** | Unknown |
 | **M4 Family** | 🟢 **Supported** | Full Telemetry. |
 | **M5** | 🟢 **Supported** | Full Telemetry. |
+| **M5 Pro** | ⚪ **Pending** | Power sensors dump pending. |
+| **M5 Max** | ⚪ **Pending** | Power sensors dump pending. |
 
 ### Apple A-Series
 
@@ -86,8 +88,9 @@ While Socbud can detect the model identity of almost all Apple Silicon devices, 
 | **A10 Fusion** | ⚪ **Pending** | Power sensors dump pending. |
 | **A9X** | ⚪ **Pending** | Power sensors dump pending. |
 | **A9** | ⚪ **Pending** | Power sensors dump pending. |
-| **A8X** | ⚪ **Pending** | Power sensors dump pending. |
+| **A8X** | 🟢 **Supported** | Full Telemetry. |
 | **A8** | ⚪ **Pending** | Power sensors dump pending. |
+| **A7** | ⚪ **Pending** | Power sensors dump pending. |
 
 ## 🖥️ Socbud+ TUI Usage
 
